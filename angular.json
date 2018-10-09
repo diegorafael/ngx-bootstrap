@@ -144,14 +144,5 @@
       }
     }
   },
-  "defaultProject": "ngx-bootstrap",
-  "schematics": {
-    "@schematics/angular:component": {
-      "prefix": "",
-      "styleext": "scss"
-    },
-    "@schematics/angular:directive": {
-      "prefix": ""
-    }
-  }
+  "defaultProject": "ngx-bootstrap"
 }

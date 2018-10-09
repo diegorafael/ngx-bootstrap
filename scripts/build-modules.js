@@ -27,7 +27,12 @@ async function buildAll() {
 
   await execa.shell(`npm run link`);
 
-  const requiredModules = ['collapse', 'chronos', 'utils', 'positioning', 'component-loader', 'dropdown', 'locale', 'alert', 'buttons', 'carousel', 'mini-ngrx', 'modal', 'pagination', 'popover', 'progressbar', 'rating', 'sortable', 'tabs', 'timepicker', 'tooltip', 'typeahead', 'datepicker'];
+  const requiredModules = [
+    'collapse', 'chronos', 'utils', 'positioning', 'component-loader', 'dropdown', 'locale', 'alert', 'buttons',
+    'carousel', 'mini-ngrx', 'modal', 'pagination', 'popover', 'progressbar', 'rating', 'sortable', 'tabs',
+    'timepicker', 'tooltip', 'typeahead', 'datepicker'
+  ];
+
   await buildModules(requiredModules);
 
   console.log('Building accordion module');
